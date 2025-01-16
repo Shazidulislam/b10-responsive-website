@@ -10,20 +10,43 @@
 }
 html{
     scroll-behavior: smooth;
-    background-color: #F5EFFF;
+    background-color: #fff5f5;
     font-size: 62.5%;
     font-family: "",sans-serif;
+    color: #fff;
 }
 body{
-    background-color: #F5EFFF;
+    background-color: #000000;
+    color: #fff;
     width: 100rem;
     max-width: 100%;
     margin: auto;
     box-shadow: .1rem .1rem .1rem #4c4c4c , -.1rem 0 .1rem #4c4c4c;
 }
+img{
+    max-width: 100%;
+}
+.btn{
+    padding: 1.1rem 2.6rem;
+    background-color: #E6533C;
+    border-radius: 2.6rem;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin: 1rem .5rem;
+}
 
 /* genaral web code end here  */
+
 /* nav style code start here  */
+.nav__head-link{
+    font-weight: 800;
+    font-size: 2.2rem;
+    font-family: "inter",sans-serif;
+    color: #E6533C;
+    font-style: italic;
+}
 .nav-container{
     display: flex;
     justify-content: space-between;
@@ -36,16 +59,70 @@ body{
 .nav__ul{
     display: flex;
     gap: 3rem;
+    padding: 10px;
+    border-radius: 2.8rem;
+    transition: all .4s linear;
+}
+:hover.nav__ul{
+    border: .01px solid #ffffff3f;
 }
 .nav__link{
     font-size: 1.2rem;
     font-weight: 400;
     font-family: "inter",sans-serif;
     color: #fff;
-
-
+    transition: all .4s linear;
+    padding: 8px 20px;
+    border-radius: 2.8rem;
+}
+:hover.nav__link{
+    background-color: #E6533C;
 }
 /* nav style code end here  */
+/* header style code start here  */
+
+.header-container{
+    background-color: #111111;
+    max-height: 715px;
+}
+.header__heading ,span {
+    font-weight: 900;
+    font-size: 5.2rem;
+    line-height: 6rem;
+    color: #ffffff;
+    font-family: "inter"sans-serif;
+}
+span{
+    font-family: "Italianno", sans-serif;
+    font-weight: 600;
+    font-style: normal; 
+    color: #E6533C;   
+}
+.header__description{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 24px;
+    letter-spacing: .5px;
+    color: #FFFFFF;
+    opacity: 50%;
+}
+.button__style{
+    background-color: #111111;
+    color: #e6dbdb;
+    border: 1px solid #fff;
+}
+.header-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 0 10rem;
+}
+.container-div{
+    width: 400px;
+
+}
+/* header style code start here  */
 /* responsive wed code start here  */
 @media screen and (max-width:992px) {
     
