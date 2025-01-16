@@ -23,6 +23,29 @@ body{
 }
 
 /* genaral web code end here  */
+/* nav style code start here  */
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    position: sticky;
+    padding: 3rem 10rem;
+    background-color: #111111;
+}
+.nav__ul{
+    display: flex;
+    gap: 3rem;
+}
+.nav__link{
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: "inter",sans-serif;
+    color: #fff;
+
+
+}
+/* nav style code end here  */
 /* responsive wed code start here  */
 @media screen and (max-width:992px) {
     
@@ -34,7 +57,7 @@ body{
 }
 @media screen and (max-width:600px) {
     html{
-        font-size: 48.5px;
+        font-size: 48%;
     }
 }
 /* responsive wed code end here  */
