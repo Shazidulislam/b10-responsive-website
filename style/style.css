@@ -35,6 +35,7 @@ img{
     font-weight: 600;
     font-family: sans-serif;
     margin: 1rem .5rem;
+    cursor: pointer;
 }
 
 /* genaral web code end here  */
@@ -82,8 +83,9 @@ img{
 /* header style code start here  */
 
 .header-container{
-    background-color: #111111;
-    max-height: 715px;
+    background-color:#111111;
+    background-image: linear-gradient(0deg,#00000034 , #00000060, #00000034);
+    /* max-height: 715px; */
 }
 .header__heading ,span {
     font-weight: 900;
@@ -112,29 +114,100 @@ span{
     border: 1px solid #fff;
 }
 .header-section{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     justify-content: center;
     align-items: center;
     flex: 1;
     padding: 0 10rem;
 }
-.container-div{
-    width: 400px;
 
-}
 /* header style code start here  */
+/* here start banner code style  */
+.banner-section{
+    margin: 6rem 4rem;
+    background-color: #000;
+}
+.banner__header{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    /* width: 450PX; */
+    justify-self: center;
+}
+.banner__heading{
+    font-size: 3.3rem;
+    font-family: "inter",sans-serif;
+    text-align: center;
+    font-weight: 900;
+    color: #FFFFFF;
+    line-height: 57PX;
+}
+.banner__description{
+    font-size: 1rem;
+    font-family: "inter",sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;
+    opacity: 50%;
+}
+.banner__img-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    margin: 4rem 1rem;
+}
+.banner__img{
+    border-radius: 100%;
+}
+.fig__heading{
+    font-size: 20px;
+    font-weight: 450;
+    font-family: "Italianno", sans-serif;
+    text-align: center;
+}
+figcaption{
+    font-size: 12px;
+    font-weight: 400;
+    color: #ffe3e3;
+    opacity: 60%;
+    text-align: center;
+}
+.img__sub-container{
+    padding-bottom:20px ;
+}
+
+/* here start banner code style  */
 /* responsive wed code start here  */
 @media screen and (max-width:992px) {
     
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:776px) {
     html{
         font-size: 55.5%;
     }
+    .header-section{
+        grid-template-columns: 1fr;
+    
+    }
+    #banner__img-container{
+        grid-template-columns: repeat(2,1rf);
+    }
+    .banner__img-container{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+   
 }
 @media screen and (max-width:600px) {
     html{
         font-size: 48%;
+    }
+    .header-section{
+        grid-template-columns: 1fr;
+    }
+    .banner__img-container{
+        grid-template-columns: repeat(1,1fr);
+        
     }
 }
 /* responsive wed code end here  */
